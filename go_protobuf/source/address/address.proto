@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example.address;
+
+option go_package = "address;addresspb";
+
+import "source/address/location.proto";
+
+message Address{
+    location.Location correspondanceAddr = 1;
+    repeated location.Location additionalAddr = 2;
+}

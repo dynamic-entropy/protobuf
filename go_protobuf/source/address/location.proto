@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "source/address/city.proto";
+
+option go_package = "address;addresspb";
+
+package location;
+ 
+message Location {
+    string location = 1;
+    city.City city = 2;
+}

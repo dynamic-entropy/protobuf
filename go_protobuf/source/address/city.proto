@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package city;
+
+option go_package = "address;addresspb";
+ 
+enum division{
+    UNKNOWN = 0;
+    EAST = 1;
+    WEST = 2;
+    NORTH = 3;
+    SOUTH = 4;
+}
+
+message City {
+    string name = 1;
+    string zip_code = 2;
+    division region = 3;
+}
