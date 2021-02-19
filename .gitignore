@@ -16,6 +16,9 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# Temporary Shell Scripts
+generate.sh
+
 ### Go Patch ###
 /vendor/
 /Godeps/
