@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go_protobuf/addr"
 	"go_protobuf/filerw"
 	"go_protobuf/jsonrw"
 	simplepb "go_protobuf/source/simple"
@@ -9,9 +10,14 @@ import (
 )
 
 func main() {
-	sm := filerw.CreateSimple()
-	readWriteFile(sm)
-	readWriteJSON(sm)
+	//Examples with simple.proto file
+	// sm := filerw.CreateSimple()
+	// readWriteFile(sm)
+	// readWriteJSON(sm)
+
+	//Examples with address.proto file
+	a := addr.CreateAddress()
+	fmt.Println(a)
 
 }
 
