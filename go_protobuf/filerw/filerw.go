@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	simplepb "go_grpc/source/simple"
+	simplepb "go_protobuf/source/simple"
 
 	"google.golang.org/protobuf/proto"
 )

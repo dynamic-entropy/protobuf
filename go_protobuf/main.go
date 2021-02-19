@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"go_grpc/filerw"
-	"go_grpc/jsonrw"
-	simplepb "go_grpc/source/simple"
+	"go_protobuf/filerw"
+	"go_protobuf/jsonrw"
+	simplepb "go_protobuf/source/simple"
 	"log"
 )
 
 func main() {
 	sm := filerw.CreateSimple()
-	// readWriteFile(sm)
+	readWriteFile(sm)
 	readWriteJSON(sm)
 
 }

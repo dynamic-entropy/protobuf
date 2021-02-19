@@ -1,4 +1,4 @@
-module go_grpc
+module go_protobuf
 
 go 1.16
 
